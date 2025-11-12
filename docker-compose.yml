@@ -1,0 +1,11 @@
+services:
+  bot:
+    build: .
+    container_name: ai_bot
+    environment:
+      # ==================== IMPORTANT ====================
+      # Здесь задайте токен бота (или прокиньте из .env)
+      # Пример .env файла: TELEGRAM_BOT_TOKEN=123456:ABC...
+      TELEGRAM_BOT_TOKEN: "${TELEGRAM_BOT_TOKEN}"
+      # ===================================================
+    restart: unless-stopped

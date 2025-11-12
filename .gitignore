@@ -1,0 +1,25 @@
+# Build artifacts
+/bin/
+/build/
+/dist/
+
+# Go modules and caches
+/vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Local env and secrets
+.env
+.env.local
+.env.*
+
+# Coverage
+coverage.out
+
+
